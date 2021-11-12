@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Tabuleiro</title>
+
+    <style>
+
+        td {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+
+        #referencia{
+            font-size: 55px;
+            position: absolute;
+            left: 900px;
+            top: 150px;
+        }
+
+        #mostrar{
+            position: absolute;
+            left: 900px;
+            top:300px;
+        
+        }
+
+        #placar{
+            font-size: 12px;
+            position: absolute;
+            left: 900px;
+            top: 150px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p id="referencia"></p>
+    <button id="mostrar" onclick="mostrar()">Mostrar</button>
+
+    <div id="container"></div>
+    <p id="placar"></p>
+
+<script src="tabuleiro.js"></script>
+
+</body>
+
+</html>
