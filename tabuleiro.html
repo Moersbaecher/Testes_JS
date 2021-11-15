@@ -37,6 +37,24 @@
             top: 150px;
         }
 
+        #certo{
+            font-size: 42px;
+            position: absolute;
+            left: 900px;
+            top: 450px;
+            padding: 5px;
+            background-color: rgba(43, 248, 43, 0.76);
+        }
+
+        #errado{
+            font-size: 42px;
+            position: absolute;
+            left: 900px;
+            top: 550px;
+            padding: 5px;
+            background-color: rgb(255, 40, 40);
+        }
+
     </style>
 
 </head>
@@ -44,10 +62,11 @@
 <body>
 
     <p id="referencia"></p>
-    <button id="mostrar" onclick="mostrar()">Mostrar</button>
+    <button id="mostrar">Iniciar</button>
 
     <div id="container"></div>
-    <p id="placar"></p>
+    <p id="certo">0</p>
+    <p id="errado">0</p>
 
 <script src="tabuleiro.js"></script>
 
