@@ -28,7 +28,7 @@ casa.forEach((value, i) => {
     let placar = document.getElementById("placar");
 
   cell = row.insertCell();
-  cell.innerHTML = value;
+  cell.innerHTML = "";
 
   
   function certoPopup() {
