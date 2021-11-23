@@ -9,51 +9,84 @@
 
     <style>
 
+        
+
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            grid-auto-rows: fit-content(1em);
+        }
+
         td {
             border: 1px solid black;
-            width: 100px;
-            height: 100px;
+            height: 10vh;
+            width: 10vh;
+            grid-template-rows: auto auto auto; 
             text-align: center;
         }
 
+        #container{
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
         #referencia{
-            font-size: 55px;
-            position: absolute;
-            left: 900px;
-            top: 150px;
+            font-size: 35px;
+            position: relative;
+            left: 5vh;
+            top: 10vh;
+            height: 50px;
+            padding: 0px;
+            margin: 0px;
         }
 
         #mostrar{
-            position: absolute;
-            left: 900px;
-            top:300px;
-        
-        }
-
-        #placar{
-            font-size: 12px;
-            position: absolute;
-            left: 900px;
-            top: 150px;
+            position: relative;
+            left: 5vh;
+            top: 25vh;
+            width: 45px;
+            height: 25px;
         }
 
         #certo{
             font-size: 42px;
-            position: absolute;
-            left: 900px;
-            top: 450px;
+            position:relative;
+            left: 5vh;
+            top: 26vh;
             padding: 5px;
+            margin: 0px;
+            width: 10vh;
+            text-align: center;
+            border: 1px solid rgb(22, 161, 22);
+            border-radius: 8px;
             background-color: rgba(43, 248, 43, 0.76);
         }
 
         #errado{
             font-size: 42px;
-            position: absolute;
-            left: 900px;
-            top: 550px;
+            position: relative;
+            left: 5vh;
+            top: 28vh;
             padding: 5px;
+            margin: 0px;
+            width: 10vh;
+            text-align: center;
+            border: 1px solid rgb(221, 8, 8);
+            border-radius: 8px;
             background-color: rgb(255, 40, 40);
         }
+
+        #gif{
+            position: relative;
+            height: 20vh;
+            width: 20vh;
+            left: -18vh;
+            top: -1vh;
+            background-size: cover;
+        }
+
 
     </style>
 
@@ -61,12 +94,20 @@
 
 <body>
 
-    <p id="referencia"></p>
-    <button id="mostrar">Iniciar</button>
+    <div class="wrapper">
 
-    <div id="container"></div>
-    <p id="certo">0</p>
-    <p id="errado">0</p>
+        <div id="container"></div>
+
+        <div>
+            <p id="referencia"></p>
+            <button id="mostrar">Iniciar</button>
+            <p id="certo">0</p>
+            <p id="errado">0</p>
+            <p id="gif"></p>
+        </div> 
+
+    </div>
+   
 
 <script src="tabuleiro.js"></script>
 

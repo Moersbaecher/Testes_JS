@@ -2,6 +2,7 @@ let referencia = document.getElementById("referencia");
 let mostrar = document.getElementById("mostrar");
 let certo = document.getElementById("certo");
 let errado = document.getElementById("errado");
+let gif = document.getElementById("gif");
 
 const files = ["A", "B", "C", "D", "E", "F", "G", "H"];
 
@@ -29,16 +30,16 @@ for(let i = 8; i > 0; i--) {
     
     
         function certoPopup() {
-            var win = window.open("img/certo.gif", "myWindow", "height = 350, width = 350, resizable = 0");
+            gif.style.backgroundImage = "url(img/certo.gif)";
             setTimeout(function () {
-                win.close();
+                gif.style.backgroundImage = "";
             }, 1000);
         }
     
-        function errdoPopup() {
-            var win = window.open("img/nope.gif", "myWindow", "height = 350, width = 350, resizable = 0");
+        function erradoPopup() {
+            gif.style.backgroundImage = "url(img/nope.gif)";
             setTimeout(function () {
-                win.close();
+                gif.style.backgroundImage = "";
             }, 1000);
         }
     
@@ -50,16 +51,14 @@ for(let i = 8; i > 0; i--) {
                 certoPopup()
             } else {
                 errado.innerHTML = parseInt(errado.innerHTML) + add;
-                errdoPopup()
+                erradoPopup()
             }
     
             referencia.innerHTML = "";
-            //console.log(certo.innerHTML);
-            //console.log(add);
     
             setTimeout(function () {
                 referencia.innerHTML = getRandomSquare();
-            }, 1000);
+            }, 100);
     
     
         })
