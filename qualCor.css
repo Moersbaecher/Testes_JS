@@ -1,0 +1,226 @@
+body{
+    background-color: lightgray;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: fit-content(1em);
+}
+
+td {
+    background-color: white;
+    border: 1px solid black;
+    height: 10vh;
+    width: 10vh;
+    grid-template-rows: auto auto auto; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.textoPecas{
+    position: relative;
+    left: 2vh;
+    top: 10vh;
+}
+
+#container{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#referencia{
+    font-size: 45px;
+    position: relative;
+    left: 20vh;
+    top: 15vh;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#mostrarBtn{
+    position: relative;
+    left: 19vh;
+    top: 18vh;
+    width: 55px;
+    height: 25px;
+}
+
+#color{
+    position: relative;
+    left:5vh;
+    top: 8vh;
+    width: 75px;
+    height: 25px;
+}
+
+#inverter{
+    position: relative;
+    left:-5vh;
+    top: 18vh;
+    width: 55px;
+    height: 25px;
+}
+
+#certo{
+    font-size: 72px;
+    font-family: 'DS-Digital', sans-serif;
+    position:relative;
+    left: 50vh;
+    padding: 2px;
+    margin: 0px;
+    width: 20vh;
+    text-align: center;
+    border: 1px solid rgb(22, 161, 22);
+    border-radius: 8px;
+    background-color: rgba(43, 248, 43, 0.76);
+}
+
+.acertos{
+    font-size: 28px;
+    position:relative;
+    left: 50vh;
+    padding: 2px;
+    margin: 0px;
+    width: 20vh;
+    text-align: center;
+
+}
+
+#total{
+    font-size: 72px;
+    font-family: 'DS-Digital', sans-serif;
+    position: relative;
+    left: 50vh;
+    top: -10vh;
+    padding: 2px;
+    margin: 0px;
+    width: 20vh;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    background-color: rgb(238, 238, 238);
+}
+
+.tentativas{
+    font-size: 26px;
+    position: relative;
+    left: 28vh;
+    top: -8vh;
+    padding: 2px;
+    margin: 0px;
+    width: 20vh;
+    text-align: center;
+}
+
+
+.textoCasa{
+    position: relative;
+    left: 35vh;
+    top: 8vh;
+}
+
+#mostraCor{
+    background-color: rgba(91, 79, 255, 0.664);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 35vh;
+    top: 10vh;
+}
+
+
+#gif{
+    position: relative;
+    height: 30vh;
+    width: 30vh;
+    left: 15vh;
+    top: 7vh;
+    background-size: cover;
+}
+#brancaBtn{
+    position: relative;
+    height: 10vh;
+    width: 10vh;
+    top: 25vh;
+    left: 10vh;
+    background-color: white;
+    color: black;
+}
+
+#pretaBtn{
+    position: relative;
+    height: 10vh;
+    width: 10vh;
+    top: 25vh;
+    left: 15vh;
+    background-color: black;
+    color: white;
+}
+
+/*==================================  toggle switch ======================================*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    left: -25vh;
+    top: 2vh;
+    width: 14px;
+    height: 40px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 1px;
+    bottom: 27px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000000;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateY(26px);
+    -ms-transform: translateY(26px);
+    transform: translateY(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 15px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

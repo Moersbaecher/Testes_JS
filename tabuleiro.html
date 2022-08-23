@@ -7,88 +7,7 @@
     <meta charset="utf-8">
     <title>Tabuleiro</title>
 
-    <style>
-
-        
-
-        .wrapper{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 10px;
-            grid-auto-rows: fit-content(1em);
-        }
-
-        td {
-            border: 1px solid black;
-            height: 10vh;
-            width: 10vh;
-            grid-template-rows: auto auto auto; 
-            text-align: center;
-        }
-
-        #container{
-            width: 100%;
-            padding: 0px;
-            margin: 0px;
-        }
-
-        #referencia{
-            font-size: 35px;
-            position: relative;
-            left: 5vh;
-            top: 10vh;
-            height: 50px;
-            padding: 0px;
-            margin: 0px;
-        }
-
-        #mostrar{
-            position: relative;
-            left: 5vh;
-            top: 25vh;
-            width: 45px;
-            height: 25px;
-        }
-
-        #certo{
-            font-size: 42px;
-            position:relative;
-            left: 5vh;
-            top: 26vh;
-            padding: 5px;
-            margin: 0px;
-            width: 10vh;
-            text-align: center;
-            border: 1px solid rgb(22, 161, 22);
-            border-radius: 8px;
-            background-color: rgba(43, 248, 43, 0.76);
-        }
-
-        #errado{
-            font-size: 42px;
-            position: relative;
-            left: 5vh;
-            top: 28vh;
-            padding: 5px;
-            margin: 0px;
-            width: 10vh;
-            text-align: center;
-            border: 1px solid rgb(221, 8, 8);
-            border-radius: 8px;
-            background-color: rgb(255, 40, 40);
-        }
-
-        #gif{
-            position: relative;
-            height: 20vh;
-            width: 20vh;
-            left: -18vh;
-            top: -1vh;
-            background-size: cover;
-        }
-
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 
 </head>
 
@@ -100,9 +19,23 @@
 
         <div>
             <p id="referencia"></p>
-            <button id="mostrar">Iniciar</button>
+
+             <form>
+                <p class="textoPecas">Você está com as:</p>
+                <select id="color">
+                  <option value="brancas">Brancas</option>
+                  <option value="pretas">Pretas</option>
+                </select>
+
+              </form>
+
+
+            <button id="mostrar">Mostrar</button>
+            <!--<button id="inverter">Iniciar</button>-->
             <p id="certo">0</p>
             <p id="errado">0</p>
+            <spam class="textoCasa">A cor da casa é:</spam>
+            <p id="mostraCor"></p>
             <p id="gif"></p>
         </div> 
 
