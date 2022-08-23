@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Qual a cor</title>
+
+    <link rel="stylesheet" type="text/css" href="qualCor.css">
+    <style>
+      @import url('http://fonts.cdnfonts.com/css/ds-digital');
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div id="container"></div>
+        
+
+        <div>
+
+          <label class="switch">
+            <input type="checkbox" id="showSquare" onchange="showSquare()" checked>
+            <span class="slider round"></span>
+          </label>
+          
+            <p id="referencia"></p>
+
+            <button id="brancaBtn">Branca</button>
+            <button id="pretaBtn">Preta</button>
+            <span class="tentativas">Tentativas:</span>
+            <p id="total">0</p>
+            <span class="acertos">Acertos:</span>
+            <p id="certo">0</p>
+            <p id="gif"></p>
+        </div> 
+
+    </div>
+   
+
+<script src="qualCor.js"></script>
+
+</body>
+
+</html>

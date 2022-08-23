@@ -1,0 +1,119 @@
+body{
+    background-color: lightgray;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: fit-content(1em);
+}
+
+td {
+    background-color: white;
+    border: 1px solid black;
+    height: 10vh;
+    width: 10vh;
+    grid-template-rows: auto auto auto; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.textoCasa{
+    position: relative;
+    left: 20vh;
+    top: -4vh;
+}
+
+.textoPecas{
+    position: relative;
+    left: 2vh;
+    top: 10vh;
+}
+
+#container{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#referencia{
+    font-size: 35px;
+    position: relative;
+    left: 5vh;
+    top: 8vh;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#mostrar{
+    position: relative;
+    left: 5vh;
+    top: 10vh;
+    width: 55px;
+    height: 25px;
+}
+
+#color{
+    position: relative;
+    left:5vh;
+    top: 8vh;
+    width: 75px;
+    height: 25px;
+}
+
+#inverter{
+    position: relative;
+    left:-5vh;
+    top: 18vh;
+    width: 55px;
+    height: 25px;
+}
+
+#certo{
+    font-size: 42px;
+    position:relative;
+    left: 5vh;
+    top: 14vh;
+    padding: 5px;
+    margin: 0px;
+    width: 10vh;
+    text-align: center;
+    border: 1px solid rgb(22, 161, 22);
+    border-radius: 8px;
+    background-color: rgba(43, 248, 43, 0.76);
+}
+
+#errado{
+    font-size: 42px;
+    position: relative;
+    left: 5vh;
+    top: 16vh;
+    padding: 5px;
+    margin: 0px;
+    width: 10vh;
+    text-align: center;
+    border: 1px solid rgb(221, 8, 8);
+    border-radius: 8px;
+    background-color: rgb(255, 40, 40);
+}
+
+#mostraCor{
+    background-color: rgba(91, 79, 255, 0.664);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 20vh;
+    top: -6vh;
+}
+
+
+#gif{
+    position: relative;
+    height: 20vh;
+    width: 20vh;
+    left: 5vh;
+    top: 1vh;
+    background-size: cover;
+}

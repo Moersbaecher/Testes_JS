@@ -7,66 +7,40 @@
     <meta charset="utf-8">
     <title>Tabuleiro</title>
 
-    <style>
-
-        td {
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-            text-align: center;
-        }
-
-        #referencia{
-            font-size: 55px;
-            position: absolute;
-            left: 900px;
-            top: 150px;
-        }
-
-        #mostrar{
-            position: absolute;
-            left: 900px;
-            top:300px;
-        
-        }
-
-        #placar{
-            font-size: 12px;
-            position: absolute;
-            left: 900px;
-            top: 150px;
-        }
-
-        #certo{
-            font-size: 42px;
-            position: absolute;
-            left: 900px;
-            top: 450px;
-            padding: 5px;
-            background-color: rgba(43, 248, 43, 0.76);
-        }
-
-        #errado{
-            font-size: 42px;
-            position: absolute;
-            left: 900px;
-            top: 550px;
-            padding: 5px;
-            background-color: rgb(255, 40, 40);
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 
 </head>
 
 <body>
 
-    <p id="referencia"></p>
-    <button id="mostrar">Iniciar</button>
+    <div class="wrapper">
 
-    <div id="container"></div>
-    <p id="certo">0</p>
-    <p id="errado">0</p>
+        <div id="container"></div>
+
+        <div>
+            <p id="referencia"></p>
+
+             <form>
+                <p class="textoPecas">Você está com as:</p>
+                <select id="color">
+                  <option value="brancas">Brancas</option>
+                  <option value="pretas">Pretas</option>
+                </select>
+
+              </form>
+
+
+            <button id="mostrar">Mostrar</button>
+            <!--<button id="inverter">Iniciar</button>-->
+            <p id="certo">0</p>
+            <p id="errado">0</p>
+            <spam class="textoCasa">A cor da casa é:</spam>
+            <p id="mostraCor"></p>
+            <p id="gif"></p>
+        </div> 
+
+    </div>
+   
 
 <script src="tabuleiro.js"></script>
 
